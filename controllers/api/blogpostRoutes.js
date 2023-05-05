@@ -11,4 +11,6 @@ router.post('/', Auth, async (req, res) => {
     } catch (err) {
         console.error('Error in posting new blogpost: ' + err)
     }
-})
+});
+
+module.exports = router;

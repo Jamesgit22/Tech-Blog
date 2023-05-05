@@ -1,8 +1,10 @@
 const router = require('express').Router();
-// const Auth = require('../utils/auth');
+const userRoutes = require('./userRoutes');
+const commentRoutes = require('./commentRoutes');
+const blogpostRoutes = require('./blogpostRoutes'); 
 
-router.get('/', (req, res) => {
-    res.console.log('Its alive!')
-})
+router.use('/users', userRoutes);
+router.use('/comments', commentRoutes);
+router.use('/blogposts', blogpostRoutes);
 
 module.exports = router;

@@ -22,7 +22,7 @@
                                 {{#if logged-in}}
                                 <a href="#">Logout</a> {{! might need to be a diffenet tag?}}
                                 {{#else}}
-                                <a href="#">Login</a>
+                                <a href="/login">login</a>
                                 {{/if}}
                             </li> 
                         </ul>
@@ -35,13 +35,11 @@
                 </div>
             </nav>
         </div>
-        <main class="container container-fluid">
-            {{{body}}}
-        </main>
     </header>
+    <main class="container container-fluid">
+        {{{body}}}
+    </main>
     {{#if logged-in}}
     <script src="/js/logout.js"></script>
-    {{#else}}
-    <script src="/js/login.js"></script>
 </body>
 </html>

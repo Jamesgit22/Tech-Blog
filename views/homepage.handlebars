@@ -1,0 +1,20 @@
+{{!-- render all existing blogposts on page plus a add new Post button at the bottom --}}
+{{#each blogPostsObj as |post| }}
+<div class="row">
+    <div class="col-12 cust-brd-dark mt-3">
+        <div class="row justify-content-between cust-bg-dark cust-txt-light align-items-center">
+            <div class="col-4 m-1">
+                <h4>{{post.title}}</h4>
+            </div>
+            <div class="col-4">
+                <p class="m-0 p-0 text-end">Posted by {{post.user_id}} on date</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>{{post.content}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

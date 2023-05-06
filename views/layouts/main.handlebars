@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Tech Blog</title>
+</head>
+<body>
+    <header>
+        <div class="row cust-bg-dark">
+            <nav>
+                <div class="row">
+                    <div class="col-6">
+                        <ul id="nav-bar" class="d-flex flex-row cust-li-dec p-0 ms-3 pt-3">
+                            <li class="me-4 fs-4"><a href="#" class="text-decoration-none cust-txt-light me-3">Home</a></li>
+                            <li class="me-4 fs-4"><a href="#" class="text-decoration-none cust-txt-light me-3">Dashboard</a></li>
+                            {{!-- TODO: li bellow needs to be dynamically switched between login or logout. --}}
+                            <li id="log-btn" class="text-decoration-none cust-txt-light fs-4">
+                                {{#if logged-in}}
+                                <a href="#">Logout</a> {{! might need to be a diffenet tag?}}
+                                {{#else}}
+                                <a href="#">Login</a>
+                                {{/if}}
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <h1 class="cust-txt-dark ms-3 mb-4 cust-bg-light pt-1 pb-1 text-center rounded">The Tech Blog</h1>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <main class="container container-fluid">
+            {{{body}}}
+        </main>
+    </header>
+    {{#if logged-in}}
+    <script src="/js/logout.js"></script>
+    {{#else}}
+    <script src="/js/login.js"></script>
+</body>
+</html>

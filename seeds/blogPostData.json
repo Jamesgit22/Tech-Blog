@@ -1,0 +1,14 @@
+[
+    {
+        "title": "5 ways to optimize your sites SEO ranking.",
+        "content": "To optimize your website for better SEO rankings, there are several strategies you can implement. Firstly, ensure that your website has a clear and concise structure, with well-defined page titles, headings, and meta descriptions. Additionally, create high-quality and relevant content that utilizes target keywords and includes internal and external links. It's also important to focus on building a strong backlink profile by obtaining links from reputable sources. Finally, ensure that your website is mobile-friendly, has a fast loading time, and is optimized for local search by including local keywords and information. By implementing these strategies, you can improve your website's visibility in search engine results and drive more traffic to your site."
+    },
+    {
+        "title": "3 tips for writing faster JavaScript",
+        "content": "Writing efficient and performant JavaScript code is crucial for creating high-quality web applications. Firstly, it's important to avoid global variables and instead use local variables within functions to prevent namespace collisions and improve memory usage. Additionally, use loops and iterators instead of repetitive statements to reduce the number of iterations and improve the code's speed. Finally, minimize DOM manipulation and use caching techniques to reduce the number of expensive layout and rendering operations, which can significantly impact the website's performance. By following these tips, you can write faster and more efficient JavaScript code that delivers a better user experience and reduces load times."
+    },
+    {
+        "title": "The 3 most popular CSS frameworks",
+        "content": "Bootstrap is a popular front-end CSS framework developed by Twitter that provides a wide range of customizable UI components, including forms, buttons, and navigation. Foundation is another popular front-end CSS framework that offers a flexible grid system and a variety of responsive UI elements. Materialize is a CSS framework that implements Google's Material Design specification and offers a range of pre-built components, including cards, buttons, and icons, that can be easily customized to fit your application's needs."
+    }
+]

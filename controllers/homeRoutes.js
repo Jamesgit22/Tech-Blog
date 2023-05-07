@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
         
         const blogPostsObj = blogPostsData.map((data) => data.get({ plain: true }));
 
-        res.status(200).render('homepage', { //../views/layouts/main
+        res.status(200).render('homepage', {
             blogPostsObj,
             logged_in: req.session.logged_in 
         })
@@ -19,5 +19,7 @@ router.get('/', async (req, res) => {
     }
 }
 })
+
+router.get('/login', (req, res) => res.render('login'));
 
 module.exports = router;

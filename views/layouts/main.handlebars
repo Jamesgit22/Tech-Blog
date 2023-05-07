@@ -20,9 +20,9 @@
                             {{!-- TODO: li bellow needs to be dynamically switched between login or logout. --}}
                             <li id="log-btn" class="text-decoration-none cust-txt-light fs-4">
                                 {{#if logged-in}}
-                                <a href="#">Logout</a> {{! might need to be a diffenet tag?}}
-                                {{#else}}
-                                <a href="/login">login</a>
+                                <a class="text-decoration-none cust-txt-light me-3" href="#">Logout</a> {{! might need to be a diffenet tag?}}
+                                {{else}}
+                                <a class="text-decoration-none cust-txt-light me-3" href="/login">login</a>
                                 {{/if}}
                             </li> 
                         </ul>
@@ -41,5 +41,6 @@
     </main>
     {{#if logged-in}}
     <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
 </html>

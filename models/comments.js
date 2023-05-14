@@ -5,7 +5,11 @@ class Comment extends Model {
 
 }
 Comment.init(
-    {
+    {   
+        title: {
+            type: DataTypes.TEXT
+        },
+
         body: {
             type: DataTypes.TEXT
         }

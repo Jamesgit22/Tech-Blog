@@ -1,6 +1,7 @@
 :root {
     --txt-light: #D9EAD3;
     --bg-dark: #231010;
+    --silver: #A7A7A7;
 }
 
 body {
@@ -9,6 +10,10 @@ body {
 
 .cust-txt-light {
     color: var(--txt-light);
+}
+
+.cust-txt-silv {
+    color: var(--silver);
 }
 
 .cust-bg-dark {
@@ -25,4 +30,8 @@ body {
 
 .cust-brd-dark {
     border: 4px solid var(--bg-dark)
+}
+
+.cust-bg-silv {
+    background-color: var(--silver);
 }

@@ -1,0 +1,42 @@
+<header>
+        <div class="row cust-bg-dark">
+            <nav>
+                <div class="row">
+                    <div class="col-6">
+                        <ul id="nav-bar" class="d-flex flex-row cust-li-dec p-0 ms-3 pt-3">
+                            <li class="me-4 fs-4"><a href="#" class="text-decoration-none cust-txt-light me-3">Home</a></li>
+                            <li class="me-4 fs-4"><a href="/api/users/dashboard" class="text-decoration-none cust-txt-light me-3">Dashboard</a></li>
+                            <li class="me-4 fs-4"><a href="/loggedout" class="text-decoration-none cust-txt-light me-3">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <h1 class="cust-txt-dark ms-3 mb-4 cust-bg-light pt-1 pb-1 text-center rounded">The Tech Blog</h1>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container container-fluid">
+       {{!-- render all existing blogposts on page plus a add new Post button at the bottom --}}
+        {{#each postDataObj as |post| }}
+        <div class="row">
+            <div class="col-12 cust-brd-dark mt-3">
+                <div class="row justify-content-between cust-bg-dark cust-txt-light align-items-center">
+                    <div class="col-4 m-1">
+                        <h4>{{post.title}}</h4>
+                    </div>
+                    <div class="col-4">
+                        <p class="m-0 p-0 text-end">Posted by {{post.user_id}} on date</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>{{post.content}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </main>

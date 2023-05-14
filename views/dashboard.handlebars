@@ -1,0 +1,47 @@
+    <header>
+        <div class="row cust-bg-dark">
+            <nav>
+                <div class="row">
+                    <div class="col-6">
+                        <ul id="nav-bar" class="d-flex flex-row cust-li-dec p-0 ms-3 pt-3">
+                            <li class="me-4 fs-4"><a href="#" class="text-decoration-none cust-txt-light me-3">Home</a></li>
+                            <li class="me-4 fs-4"><a href="#" class="text-decoration-none cust-txt-light me-3">Dashboard</a></li>
+                            <li class="me-4 fs-4"><a href="/loggedout" class="text-decoration-none cust-txt-light me-3">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <h1 class="cust-txt-dark ms-3 mb-4 cust-bg-light pt-1 pb-1 text-center rounded">Your Dashboard</h1>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-12">
+                <h3>New Post</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <form class="form new-post">
+                            <div class="form-group">
+                                <label for="new-title">Title:</label>
+                                <input class="form-input" type="text" id="new-title"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="new-content">Content:</label>
+                                <textarea class="form-input" type="text" id="new-content"/></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="cust-bg-dark cust-txt-silv rounded fs-4 align-self-center" type="submit">+ New Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {{posts}}
+
+    <script src="./js/dashboard.js"></script>
